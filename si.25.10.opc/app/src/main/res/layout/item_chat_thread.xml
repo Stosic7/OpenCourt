@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="16dp"
+    app:cardBackgroundColor="#2A4A5C"
+    app:strokeColor="#4A6A7C"
+    app:strokeWidth="1dp"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <!-- Avatar Icon -->
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/baseline_person_24"
+            android:contentDescription="Avatar"
+            app:tint="@android:color/white"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="#3A5A6C"
+            android:padding="10dp" />
+
+        <!-- Chat Info -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="12dp">
+
+            <TextView
+                android:id="@android:id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                tools:text="Marko Marković • 2" />
+
+            <TextView
+                android:id="@android:id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#CCFFFFFF"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                tools:text="Zdravo, da li je slobodan termin? — 10:15" />
+        </LinearLayout>
+
+        <!-- Unread Badge (optional, will be added programmatically if needed) -->
+        <TextView
+            android:id="@+id/tvUnreadBadge"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="#2196F3"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:text="3"
+            tools:visibility="visible" />
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

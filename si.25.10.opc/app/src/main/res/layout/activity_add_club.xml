@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#233C4C"
+    tools:context=".AddClubActivity">
+
+    <!-- Background Triangle -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp"
+        android:scaleType="fitCenter"
+        android:scaleX="1.2"
+        android:src="@drawable/triangle"
+        android:contentDescription="@null" />
+
+    <!-- HEADER -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="28dp"
+        android:gravity="center_vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="8dp"
+            android:contentDescription="@string/back"
+            android:backgroundTint="@android:color/transparent"
+            android:textColor="@android:color/white"
+            app:icon="@drawable/arrow_left"
+            app:iconTint="@android:color/white"
+            app:iconGravity="textStart"
+            app:iconSize="24dp" />
+
+        <TextView
+            android:id="@+id/tvHeaderTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dodaj Teniski Klub"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:layout_marginStart="4dp" />
+    </LinearLayout>
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:id="@+id/scrollContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:layout_above="@id/btnSave"
+        android:layout_marginTop="20dp"
+        android:fillViewport="true"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Club Name -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Naziv kluba"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/etClubName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_corners"
+                android:hint="Unesite naziv kluba"
+                android:textColor="@android:color/white"
+                android:textColorHint="#80FFFFFF"
+                android:padding="16dp"
+                android:maxLines="1"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Address -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adresa"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/etAddress"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_corners"
+                android:hint="Unesite adresu kluba"
+                android:textColor="@android:color/white"
+                android:textColorHint="#80FFFFFF"
+                android:padding="16dp"
+                android:inputType="textPostalAddress"
+                android:maxLines="1"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Club Image Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Slika kluba"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Image Preview -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/imagePreviewCard"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="12dp"
+                android:visibility="gone"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardElevation="0dp"
+                tools:visibility="visible">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent">
+
+                    <ImageView
+                        android:id="@+id/ivClubImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="0.91"
+                        android:contentDescription="Club image"
+                        android:padding="15dp"
+                        android:scaleType="centerCrop"
+                        android:translationY="-10dp"
+                        tools:src="@drawable/tenis_court" />
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnRemoveImage"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="top|end"
+                        android:layout_margin="8dp"
+                        android:backgroundTint="#E53935"
+                        android:padding="0dp"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        app:cornerRadius="4dp"
+                        app:icon="@drawable/ic_close"
+                        app:iconTint="@android:color/white"
+                        app:iconGravity="textStart"
+                        app:iconPadding="0dp"
+                        app:iconSize="20dp" />
+                </FrameLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Add Image Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnAddImage"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_corners"
+                android:text="Dodaj sliku"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="* Opciono - dodajte sliku kluba"
+                android:textColor="#B3FFFFFF"
+                android:textSize="12sp"
+                android:layout_marginBottom="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Save Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/blue_button"
+        android:text="Sačuvaj klub"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:elevation="6dp" />
+
+</RelativeLayout>

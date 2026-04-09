@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EquipmentActivity">
+
+    <!-- POPUP overlay -->
+    <RelativeLayout
+        android:id="@+id/equipmentPopupOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/equipmentPopupCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:maxWidth="360dp"
+            android:padding="20dp"
+            android:background="@drawable/rounded_card"
+            android:elevation="8dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Iznajmi opremu"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Odaberi količine za reket i loptice."
+                android:textColor="#B0E4E4"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/title" />
+
+            <TextView
+                android:id="@+id/labelRackets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subtitle"
+                android:layout_alignStart="@+id/subtitle"
+                android:layout_marginStart="-37dp"
+                android:layout_marginTop="20dp"
+                android:text="Reket"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerRackets"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="6dp"
+                android:layout_below="@id/labelRackets"
+                android:background="@drawable/spinner_bg"
+                android:popupBackground="@drawable/popup_menu_bg"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:spinnerMode="dropdown"
+                android:entries="@array/racket_counts" />
+
+            <TextView
+                android:id="@+id/labelBalls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinnerRackets"
+                android:layout_alignStart="@id/labelRackets"
+                android:layout_marginStart="-5dp"
+                android:layout_marginTop="16dp"
+                android:text="Loptice"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerBalls"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="6dp"
+                android:layout_below="@id/labelBalls"
+                android:background="@drawable/spinner_bg"
+                android:popupBackground="@drawable/popup_menu_bg"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:spinnerMode="dropdown"
+                android:entries="@array/ball_counts" />
+
+            <LinearLayout
+                android:id="@+id/actions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spinnerBalls"
+                android:layout_marginTop="18dp"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/blue_button"
+                    android:text="Otkaži"
+                    android:textAllCaps="false"
+                    android:textColor="#B0E4E4"
+                    android:minWidth="0dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="1dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnConfirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/background_for_button"
+                    android:backgroundTint="@null"
+                    android:text="Potvrdi"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:minWidth="0dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

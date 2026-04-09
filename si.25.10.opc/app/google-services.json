@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "845386107399",
+    "project_id": "open-court-9b2ad",
+    "storage_bucket": "open-court-9b2ad.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:845386107399:android:3ab627fba195eb4f49b8a2",
+        "android_client_info": {
+          "package_name": "com.terenac.opencourt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "845386107399-5rvkh3ifi9msdesdfs0r0dc9o79km3vj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.terenac.opencourt",
+            "certificate_hash": "46fcc0c57215118efa5671abf55c5ac376278e1d"
+          }
+        },
+        {
+          "client_id": "845386107399-st3h01bqbor0legotf97csuhl8rjivp5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDF1XSnimDsTYXkyIYsqLtH4NhuOnhhG_U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "845386107399-st3h01bqbor0legotf97csuhl8rjivp5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

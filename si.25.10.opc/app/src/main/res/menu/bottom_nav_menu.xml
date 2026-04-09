@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_map"
+        android:icon="@drawable/map"
+        android:title="@string/bottom_map" />
+
+    <item
+        android:id="@+id/nav_sports"
+        android:icon="@drawable/person_crop_square_on_square_angled"
+        android:title="@string/bottom_sports" />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/baseline_person_24"
+        android:title="@string/bottom_profile" />
+
+</menu>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Open Court</string>
+
+    <string name="welcome_label">Dobrodošao,</string>
+
+    <string name="hint_choose_club">Izaberite teniski klub:</string>
+    <string name="btn_search">Pretraži</string>
+
+    <string name="ch_all">All</string>
+    <string name="ch_courts">Tereni</string>
+    <string name="ch_rackets">Reketi</string>
+    <string name="ch_balls">Loptice</string>
+
+    <string name="bottom_map">Mapa</string>
+    <string name="bottom_sports">Oglasi</string>
+    <string name="bottom_profile">Profil</string>
+    <string name="back">Nazad</string>
+
+    <string name="ad_title_hint">Unesite naziv oglasa</string>
+    <string name="ad_description_hint">Opišite oglas...</string>
+    <string name="ad_price_hint">Cena (opciono)</string>
+    <string name="ad_contact_hint">Kontakt informacije</string>
+    <string name="publish_ad">Objavi oglas</string>
+    <string name="search_ads">Pretraži oglase</string>
+    <string name="all_ads">Svi</string>
+    <string name="sale_ads">Prodaja</string>
+    <string name="discussion_ads">Diskusija</string>
+    <string name="other_ads">Ostalo</string>
+    <string name="show_contact">Prikaži kontakt</string>
+    <string name="send_comment">Pošalji</string>
+    <string name="comment_hint">Dodaj komentar...</string>
+    <string name="no_comments">Nema komentara. Budite prvi!</string>
+    <string name="comments">Komentari</string>
+    <string name="ad_details">Detalji oglasa</string>
+    <string name="create_ad">Kreiraj oglas</string>
+    <string name="ad_category">Kategorija</string>
+    <string name="ad_description">Opis</string>
+    <string name="ad_author">Objavio</string>
+    <string name="contact_info">Kontakt informacije</string>
+
+    <string name="cd_map">Mapa</string>
+    <string name="cd_sports">Sport</string>
+    <string name="cd_cart">Korpa</string>
+    <string name="cd_profile">Profil</string>
+    <string name="cd_courts_icon">Ikona terena</string>
+    <string name="cd_rackets_icon">Ikona reketa</string>
+    <string name="cd_balls_icon">Ikona loptica</string>
+    <string name="cd_back">Nazad</string>
+
+    <string name="booking_title">Rezervišite termin</string>
+    <string name="booking_subtitle">Teren (beton) • Klub TAZ</string>
+    <string name="week_title_sample">oktobar 2025.</string>
+
+    <string name="day_mon">PON</string>
+    <string name="day_tue">UTO</string>
+    <string name="day_wed">SRE</string>
+    <string name="day_thu">ČET</string>
+    <string name="day_fri">PET</string>
+    <string name="day_sat">SUB</string>
+    <string name="day_sun">NED</string>
+
+    <string name="players_label">Broj igrača</string>
+    <string name="rent_equipment">Želite da iznajmite opremu?</string>
+    <string name="reserve_btn">Rezerviši</string>
+
+    <string name="cd_prev_week">Prethodna nedelja</string>
+    <string name="cd_next_week">Sledeća nedelja</string>
+
+    <string name="msg_pick_time">Izaberite termin</string>
+    <string name="msg_reservation_summary">Rezervacija: %1$s • igrača: %2$d</string>
+    <string name="loremipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+</resources>

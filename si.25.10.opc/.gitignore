@@ -1,0 +1,29 @@
+.DS_Store
+Thumbs.db
+
+# --- IDE ---
+*.iml
+.idea/
+.vscode/
+
+# --- Gradle / Build ---
+.gradle/
+**/build/
+build/
+out/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# --- Android lokalno ---
+local.properties
+*.keystore
+*.jks
+
+# --- Kotlin/Java ---
+*.class
+*.log
+
+# --- Misc cache ---
+*.tmp
+*.bak

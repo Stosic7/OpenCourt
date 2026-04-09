@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 0..8 (max 8) -->
+    <string-array name="racket_counts">
+        <item>0</item><item>1</item><item>2</item><item>3</item>
+        <item>4</item><item>5</item><item>6</item><item>7</item><item>8</item>
+    </string-array>
+
+    <!-- 0..12 (max 12) -->
+    <string-array name="ball_counts">
+        <item>0</item><item>1</item><item>2</item><item>3</item>
+        <item>4</item><item>5</item><item>6</item><item>7</item>
+        <item>8</item><item>9</item><item>10</item><item>11</item><item>12</item>
+    </string-array>
+</resources>
